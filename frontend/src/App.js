@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from './2056977.svg';
 import './App.css';
-import {Form, Button, Col, Row } from 'react-bootstrap'
+import PrimerFormulario from './componentes/PrimerFormulario';
 
 function App() {
   var[nombre]=useState()
@@ -24,17 +24,10 @@ function App() {
           Learn React
         </a>
       </header>
-      <Row>
-        <Col>
-        <Form.Label>Martes 04</Form.Label>
-        </Col>
-        <Col>
-        <Form.Control value={nombre}></Form.Control>
-        </Col>
-        <Col>
-        <Button onClick={click}>ok</Button>
-        </Col>
-      </Row>
+
+      <div>
+        <PrimerFormulario />
+      </div>
     </div>
   );
 }
