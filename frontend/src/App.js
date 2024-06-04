@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from './2056977.svg';
 import './App.css';
 import PrimerFormulario from './componentes/PrimerFormulario';
+import Inmobiliaria from './componentes/index';
 
 function App() {
   var[nombre]=useState()
@@ -26,7 +27,7 @@ function App() {
       </header>
 
       <div>
-        <PrimerFormulario />
+        <Inmobiliaria />
       </div>
     </div>
   );

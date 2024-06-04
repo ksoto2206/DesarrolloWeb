@@ -1,7 +1,7 @@
 import { Form, Button, Col, Row, Card, CardBody, CardFooter, FormLabel } from 'react-bootstrap'
-function FormUsuarios(nombre) {
+function FormUsuarios({showForm}) {
     function click() {
-        console.log(nombre)
+        showForm()
     }
 
     return (
@@ -13,24 +13,24 @@ function FormUsuarios(nombre) {
                 <CardFooter>
                     <Row>
                         <Col>
-                            <Form.Label>Razon Social</Form.Label>
+                            <Form.Label>Razón Social</Form.Label>
                         </Col>
                         <Col>
-                            <Form.Control value={nombre}></Form.Control>
+                            <Form.Control ></Form.Control>
                         </Col>
                          <br></br>
                          <Col>
                             <Form.Label>RFC</Form.Label>
                         </Col>
                         <Col>
-                            <Form.Control value={nombre}></Form.Control>
+                            <Form.Control ></Form.Control>
                         </Col>
                          <br></br>
                          <Col>
-                            <Form.Label>Telefono</Form.Label>
+                            <Form.Label>Teléfono</Form.Label>
                         </Col>
                         <Col>
-                            <Form.Control value={nombre}></Form.Control>
+                            <Form.Control ></Form.Control>
                         </Col>
                          <br></br>
                         <Col>
@@ -41,5 +41,6 @@ function FormUsuarios(nombre) {
                 </CardFooter>
             </Card>
         </Form>
-    )
+    );
 }
+export default FormUsuarios;

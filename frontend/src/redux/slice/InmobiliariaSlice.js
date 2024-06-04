@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getInmobiliaria, getInmobiliariaUnique } from '../actions/ActionInmobiliaria';
+import { getInmobiliaria, getInmobiliariaUnique } from '../action/ActionInmobiliaria';
 
 const initialState = {
   inmobiliarias: [],
